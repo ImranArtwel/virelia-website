@@ -1,4 +1,4 @@
-const APP_URL = 'https://axon.virelia.co.zw';
+const APP_URL = "https://axon.virelia.co.zw";
 
 export function Footer() {
   return (
@@ -10,9 +10,18 @@ export function Footer() {
           <span>by Virelia</span>
         </div>
         <div className="flex items-center gap-5">
-          <a href={APP_URL} className="hover:text-slate-800 transition-colors">Sign in</a>
-          <a href="#contact" className="hover:text-slate-800 transition-colors">Contact</a>
-          <a href="mailto:imran.artwell@gmail.com" className="hover:text-slate-800 transition-colors">imran.artwell@gmail.com</a>
+          <a href={APP_URL} className="hover:text-slate-800 transition-colors">
+            Sign in
+          </a>
+          <a href="#contact" className="hover:text-slate-800 transition-colors">
+            Contact
+          </a>
+          <a
+            href="mailto:info@virelia.co.zw"
+            className="hover:text-slate-800 transition-colors"
+          >
+            info@virelia.co.zw
+          </a>
         </div>
         <p>© {new Date().getFullYear()} Virelia</p>
       </div>
