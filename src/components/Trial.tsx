@@ -4,7 +4,7 @@ export function Trial() {
   return (
     <section className="py-16 sm:py-20 px-4 bg-slate-50">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Try Axon free for 30 days</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Try Axon free for 90 days</h2>
         <p className="mt-4 text-slate-500 leading-relaxed">
           Full access to every feature. No credit card required. If you choose not to continue,
           you get a complete export of all your clinic data.

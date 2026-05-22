@@ -28,7 +28,7 @@ export function Hero() {
             Request a demo
           </a>
         </div>
-        <p className="mt-4 text-sm text-slate-400">No credit card required · Full access for 30 days</p>
+        <p className="mt-4 text-sm text-slate-400">No credit card required · Full access for 90 days</p>
       </div>
     </section>
   );
