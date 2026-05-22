@@ -3,8 +3,8 @@ import { Users, CalendarCheck, Stethoscope, Receipt, WifiOff, ShieldCheck } from
 const FEATURES = [
   {
     icon: Users,
-    title: 'Patient records',
-    description: 'Register patients once. Search by name, national ID, or phone number in seconds — from any device.',
+    title: 'Electronic health records',
+    description: 'Register patients once. Search electronic health records by name, national ID, or phone number in seconds — from any device.',
   },
   {
     icon: CalendarCheck,
@@ -14,7 +14,7 @@ const FEATURES = [
   {
     icon: Stethoscope,
     title: 'Consultations & prescriptions',
-    description: 'Doctors write notes, diagnoses, and prescriptions in a structured record that\'s locked once signed off.',
+    description: 'Doctors write notes, diagnoses, and prescriptions directly into the EMR — structured, signed off, and locked from editing.',
   },
   {
     icon: Receipt,
@@ -29,7 +29,7 @@ const FEATURES = [
   {
     icon: ShieldCheck,
     title: 'Audit & compliance',
-    description: 'Every change is logged. Export a full data archive at any time for compliance or data portability.',
+    description: 'Every change to the health record is logged. Export a full archive anytime for compliance, audits, or migration to another system.',
   },
 ];
 
@@ -38,8 +38,8 @@ export function Features() {
     <section id="features" className="py-16 sm:py-20 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Everything your clinic needs</h2>
-          <p className="mt-3 text-slate-500">One system, from check-in to invoice.</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Everything your clinic needs, in one EMR</h2>
+          <p className="mt-3 text-slate-500">From patient check-in to invoice — one health tech platform.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURES.map(({ icon: Icon, title, description }) => (

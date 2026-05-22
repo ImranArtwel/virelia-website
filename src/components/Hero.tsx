@@ -11,8 +11,8 @@ export function Hero() {
           Run your clinic<br className="hidden sm:block" /> without the paperwork
         </h1>
         <p className="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          Axon is a simple, offline-ready clinic management system — patients, appointments,
-          triage, billing, and records in one place. No IT team required.
+          Axon is a simple, offline-ready EMR and clinic management system — electronic health
+          records, appointments, triage, billing, and prescriptions in one place. No IT team required.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
