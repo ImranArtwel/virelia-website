@@ -16,6 +16,12 @@ export function Footer() {
           <a href="#contact" className="hover:text-slate-800 transition-colors">
             Contact
           </a>
+          <a href="/terms" className="hover:text-slate-800 transition-colors">
+            Terms
+          </a>
+          <a href="/privacy" className="hover:text-slate-800 transition-colors">
+            Privacy
+          </a>
           <a
             href="mailto:info@virelia.co.zw"
             className="hover:text-slate-800 transition-colors"

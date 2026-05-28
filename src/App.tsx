@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { Problem } from './components/Problem';
@@ -7,8 +8,10 @@ import { DataGuarantee } from './components/DataGuarantee';
 import { Trial } from './components/Trial';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
+import { TermsPage } from './pages/TermsPage';
+import { PrivacyPage } from './pages/PrivacyPage';
 
-export default function App() {
+function HomePage() {
   return (
     <>
       <Nav />
@@ -23,5 +26,15 @@ export default function App() {
       </main>
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/terms" element={<TermsPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+    </Routes>
   );
 }
