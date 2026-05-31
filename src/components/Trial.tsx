@@ -24,10 +24,10 @@ export function Trial() {
           ))}
         </ul>
         <a
-          href={APP_URL}
+          href="#contact"
           className="inline-block mt-8 px-8 py-3.5 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors shadow-sm"
         >
-          Get started — it's free
+          Request free trial
         </a>
         <p className="mt-3 text-xs text-slate-400">No credit card · Cancel anytime</p>
       </div>

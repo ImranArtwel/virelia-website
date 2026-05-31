@@ -52,7 +52,7 @@ export function ContactForm() {
           Thanks — we'll be in touch within 24 hours.
         </h3>
         <p className="mt-2 text-sm text-slate-500">
-          In the meantime, feel free to start your free trial.
+          We'll be in touch soon to get your clinic set up.
         </p>
       </div>
     );

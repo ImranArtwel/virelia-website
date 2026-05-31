@@ -22,10 +22,10 @@ export function Nav() {
           <a href="#contact" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
           <a href={APP_URL} className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Sign in</a>
           <a
-            href={APP_URL}
+            href="#contact"
             className="px-4 py-2 bg-teal-600 text-white text-sm font-semibold rounded-lg hover:bg-teal-700 transition-colors"
           >
-            Start free trial
+            Get started
           </a>
         </div>
 
@@ -48,10 +48,10 @@ export function Nav() {
           <a href="#contact" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Contact</a>
           <a href={APP_URL} className="block text-sm text-slate-700 py-1">Sign in</a>
           <a
-            href={APP_URL}
+            href="#contact"
             className="block w-full text-center px-4 py-2.5 bg-teal-600 text-white text-sm font-semibold rounded-lg hover:bg-teal-700 transition-colors"
           >
-            Start free trial
+            Get started
           </a>
         </div>
       )}
