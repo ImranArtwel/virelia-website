@@ -20,5 +20,8 @@ renderPage('/terms', resolve(root, 'dist/terms/index.html'))
 mkdirSync(resolve(root, 'dist/privacy'), { recursive: true })
 renderPage('/privacy', resolve(root, 'dist/privacy/index.html'))
 
+mkdirSync(resolve(root, 'dist/pricing'), { recursive: true })
+renderPage('/pricing', resolve(root, 'dist/pricing/index.html'))
+
 rmSync(resolve(root, 'dist-ssr'), { recursive: true, force: true })
 console.log('Pre-rendering complete.')

@@ -19,6 +19,7 @@ export function Nav() {
         <div className="hidden sm:flex items-center gap-6">
           <a href="#features" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Features</a>
           <a href="#how-it-works" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">How it works</a>
+          <a href="/pricing" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Pricing</a>
           <a href="#contact" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
           <a href={APP_URL} className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Sign in</a>
           <a
@@ -45,6 +46,7 @@ export function Nav() {
         <div className="sm:hidden border-t border-slate-100 bg-white px-4 py-4 space-y-3">
           <a href="#features" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Features</a>
           <a href="#how-it-works" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">How it works</a>
+          <a href="/pricing" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Pricing</a>
           <a href="#contact" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Contact</a>
           <a href={APP_URL} className="block text-sm text-slate-700 py-1">Sign in</a>
           <a
