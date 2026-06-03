@@ -10,6 +10,7 @@ import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 import { TermsPage } from './pages/TermsPage';
 import { PrivacyPage } from './pages/PrivacyPage';
+import { PricingPage } from './pages/PricingPage';
 
 function HomePage() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/terms" element={<TermsPage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
     </Routes>
   );
 }
