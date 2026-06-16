@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex items-center gap-3">
           <span className="font-semibold text-slate-700">Axon</span>
           <span className="text-slate-300">·</span>
-          <span>by Virelia</span>
+          <span>by Virelia Health Systems</span>
         </div>
         <div className="flex items-center gap-5">
           <a href={APP_URL} className="hover:text-slate-800 transition-colors">
@@ -29,7 +29,7 @@ export function Footer() {
             info@virelia.co.zw
           </a>
         </div>
-        <p>© {new Date().getFullYear()} Virelia</p>
+        <p>© {new Date().getFullYear()} Virelia Health Systems</p>
       </div>
     </footer>
   );
