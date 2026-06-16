@@ -13,7 +13,7 @@ export function Problem() {
             Running a clinic shouldn't mean drowning in admin
           </h2>
           <p className="mt-3 text-slate-500 max-w-xl mx-auto">
-            Most private clinics in Zimbabwe are still managing everything on paper or across a
+            Most clinics in Zimbabwe are still managing everything on paper or across a
             patchwork of tools. There's a better way.
           </p>
         </div>

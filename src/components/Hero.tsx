@@ -5,7 +5,7 @@ export function Hero() {
     <section className="bg-gradient-to-b from-teal-50 to-white py-20 sm:py-28 px-4">
       <div className="max-w-3xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
-          Built for private clinics in Zimbabwe
+          Built for every clinic in Zimbabwe
         </div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight tracking-tight">
           Run your clinic<br className="hidden sm:block" /> without the paperwork
