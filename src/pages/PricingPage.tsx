@@ -6,8 +6,8 @@ import { Footer } from '../components/Footer';
 interface Tier {
   id: string;
   name: string;
-  monthlyPrice: number | null;
-  annualPrice: number | null;
+  monthlyPrice: number;
+  annualPrice: number;
   description: string;
   seats: string;
   cta: string;
@@ -30,12 +30,14 @@ const tiers: Tier[] = [
       'Patient registration & appointments',
       'Triage + vital signs (BMI)',
       'Consultations, ICD-10, prescriptions',
+      'Encounter locking & amendment trail',
       'Sick notes',
-      'Multi-currency billing (USD + ZiG)',
+      'Multi-currency billing & daily reconciliation (USD + ZiG)',
       'Fee schedule & invoicing',
-      'Offline-first sync',
+      'Diagnosis reports',
       'Data export',
       'Audit log',
+      'Offline-first sync',
     ],
   },
   {
@@ -51,9 +53,9 @@ const tiers: Tier[] = [
     features: [
       'Everything in Essentials',
       'Lab orders & results',
-      'Encounter locking & amendment trail',
+      'Inventory & stock tracking',
+      'Expense tracking',
       'Device management',
-      'Daily financial reconciliation',
       'Revenue analytics',
       'Inter-clinic patient sharing',
     ],
@@ -63,51 +65,21 @@ const tiers: Tier[] = [
     name: 'Practice',
     monthlyPrice: 150,
     annualPrice: 1350,
-    description: 'For busy clinics with patient engagement needs.',
+    description: 'For busy clinics that want consultations captured, not just typed.',
     seats: 'Unlimited clinicians',
     cta: 'Start free trial',
     featured: false,
     features: [
       'Everything in Clinic',
-      'SMS appointment reminders',
-      'Patient recall system',
-      'Up to 3 branch locations',
+      'Consultation recording + AI transcription',
       'Priority support (4hr response)',
       'Dedicated WhatsApp support',
-    ],
-  },
-  {
-    id: 'enterprise',
-    name: 'Enterprise',
-    monthlyPrice: null,
-    annualPrice: null,
-    description: 'For clinic chains and hospital groups.',
-    seats: 'Unlimited',
-    cta: 'Contact us',
-    featured: false,
-    features: [
-      'Everything in Practice',
-      'Unlimited branches',
-      'API access',
-      'White-labeling',
-      'Custom integrations',
-      'Dedicated account manager & SLA',
-      'Custom onboarding & training',
     ],
   },
 ];
 
 function PriceDisplay({ tier, annual }: { tier: Tier; annual: boolean }) {
-  if (tier.monthlyPrice === null) {
-    return (
-      <div className="mt-5">
-        <p className="text-4xl font-bold text-slate-900">Custom</p>
-        <p className="mt-1 text-xs text-slate-400">floor $600 / month</p>
-      </div>
-    );
-  }
-
-  if (annual && tier.annualPrice !== null) {
+  if (annual) {
     const saving = tier.monthlyPrice * 3;
     return (
       <div className="mt-5">
@@ -189,7 +161,7 @@ export function PricingPage() {
         {/* Pricing cards */}
         <section className="px-4 pb-20">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
               {tiers.map((tier) => (
                 <div
                   key={tier.id}
@@ -223,8 +195,6 @@ export function PricingPage() {
                     className={`mt-5 block w-full text-center py-2.5 text-sm font-semibold rounded-lg transition-colors ${
                       tier.featured
                         ? 'bg-teal-600 text-white hover:bg-teal-700'
-                        : tier.id === 'enterprise'
-                        ? 'border border-slate-300 text-slate-700 hover:bg-slate-50'
                         : 'border border-teal-500 text-teal-700 hover:bg-teal-50'
                     }`}
                   >
@@ -249,6 +219,13 @@ export function PricingPage() {
 
             <p className="mt-8 text-center text-xs text-slate-400">
               All prices in USD. Annual billing invoiced upfront.
+            </p>
+            <p className="mt-3 text-center text-sm text-slate-500">
+              Running multiple branches, or need something outside these plans?{' '}
+              <a href="/#contact" className="font-medium text-teal-600 hover:text-teal-700">
+                Contact us
+              </a>{' '}
+              and we'll figure out terms together.
             </p>
           </div>
         </section>
@@ -315,7 +292,7 @@ export function PricingPage() {
                 },
                 {
                   q: 'Do you offer a discount for larger practices?',
-                  a: "The per-clinician rate doesn't change based on volume — our pricing is already designed to scale. For very large deployments (10+ clinicians or multiple branches), reach out and we'll discuss Enterprise terms.",
+                  a: "The per-clinician rate doesn't change based on volume — our pricing is already designed to scale. For very large deployments or multiple branches, reach out and we'll work out custom terms.",
                 },
               ].map(({ q, a }) => (
                 <div key={q} className="border-b border-slate-100 pb-5">
