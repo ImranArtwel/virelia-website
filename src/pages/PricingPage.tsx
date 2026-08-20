@@ -53,8 +53,11 @@ const tiers: Tier[] = [
     features: [
       'Everything in Essentials',
       'Lab orders & results',
-      'Inventory & stock tracking',
+      'Radiology ordering & results',
+      'Ward & bed management',
+      'Inventory, stock & purchase tracking',
       'Expense tracking',
+      'Payroll',
       'Device management',
       'Revenue analytics',
       'Inter-clinic patient sharing',
