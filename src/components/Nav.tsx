@@ -20,6 +20,7 @@ export function Nav() {
           <a href="#features" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Features</a>
           <a href="#how-it-works" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">How it works</a>
           <a href="/pricing" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Pricing</a>
+          <a href="/guides" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Guides</a>
           <a href="#contact" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Contact</a>
           <a href={APP_URL} className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Sign in</a>
           <a
@@ -47,6 +48,7 @@ export function Nav() {
           <a href="#features" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Features</a>
           <a href="#how-it-works" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">How it works</a>
           <a href="/pricing" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Pricing</a>
+          <a href="/guides" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Guides</a>
           <a href="#contact" onClick={() => setOpen(false)} className="block text-sm text-slate-700 py-1">Contact</a>
           <a href={APP_URL} className="block text-sm text-slate-700 py-1">Sign in</a>
           <a

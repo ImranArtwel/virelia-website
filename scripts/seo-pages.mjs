@@ -17,6 +17,30 @@ export const pages = [
       'Axon is a hospital and clinic management system for Zimbabwe: electronic medical records, appointments, triage, prescriptions, billing and offline mode. Free 90-day trial.',
   },
   {
+    path: '/guides',
+    title: 'Guides for Zimbabwe Clinics: EMR, Clinic Software & Records | Axon',
+    description:
+      'Practical guides on electronic medical records, clinic management software, paper vs digital records and offline EMR for clinics in Zimbabwe.',
+  },
+  {
+    path: '/guides/clinic-management-software-zimbabwe',
+    title: 'Clinic Management Software in Zimbabwe: What to Look For | Axon EMR',
+    description:
+      'What clinic management software should do, questions to ask before you choose, and how Axon covers registration, triage, consultations and billing for Zimbabwe clinics.',
+  },
+  {
+    path: '/guides/emr-vs-paper-records-zimbabwe',
+    title: 'EMR vs Paper Records for Zimbabwe Clinics | Axon EMR',
+    description:
+      'An honest comparison of paper files and an electronic medical record: where paper fails, what an EMR changes, common objections, and how to switch.',
+  },
+  {
+    path: '/guides/offline-emr-zimbabwe',
+    title: 'Offline EMR for Clinics with Power Cuts & Weak Internet | Axon EMR',
+    description:
+      'How an offline-first EMR keeps a Zimbabwe clinic working through load-shedding and poor connectivity, and what to check before you choose one.',
+  },
+  {
     path: '/terms',
     title: 'Terms of Service | Axon EMR by Virelia Health Systems',
     description: 'Terms of Service for Axon, the electronic medical records platform by Virelia Health Systems.',

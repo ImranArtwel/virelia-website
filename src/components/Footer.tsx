@@ -19,6 +19,9 @@ export function Footer() {
           <a href="/pricing" className="hover:text-slate-800 transition-colors">
             Pricing
           </a>
+          <a href="/guides" className="hover:text-slate-800 transition-colors">
+            Guides
+          </a>
           <a href="/hospital-management-system-zimbabwe" className="hover:text-slate-800 transition-colors">
             Hospital management system
           </a>
