@@ -19,6 +19,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://virelia.co.zw/clinic-management-software-zimbabwe</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://virelia.co.zw/emr-vs-paper-records-zimbabwe</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://virelia.co.zw/offline-emr-zimbabwe</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://virelia.co.zw/terms</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>yearly</changefreq>

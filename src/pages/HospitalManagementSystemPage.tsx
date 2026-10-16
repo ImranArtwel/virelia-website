@@ -107,6 +107,16 @@ export function HospitalManagementSystemPage() {
             </dl>
           </div>
         </section>
+        <section className="pb-14 px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-lg font-bold text-slate-900 mb-3">Guides</h2>
+            <ul className="space-y-2 text-sm">
+              <li><a href="/clinic-management-software-zimbabwe" className="text-teal-600 hover:underline">Clinic management software for Zimbabwe</a></li>
+              <li><a href="/emr-vs-paper-records-zimbabwe" className="text-teal-600 hover:underline">EMR vs paper records: what changes for a clinic</a></li>
+              <li><a href="/offline-emr-zimbabwe" className="text-teal-600 hover:underline">Offline EMR for clinics with power cuts and weak internet</a></li>
+            </ul>
+          </div>
+        </section>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </main>
       <Footer />
