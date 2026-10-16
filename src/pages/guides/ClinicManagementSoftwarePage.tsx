@@ -3,7 +3,7 @@ import { ArticleLayout, H2, P, UL } from '../../components/ArticleLayout';
 export function ClinicManagementSoftwarePage() {
   return (
     <ArticleLayout
-      path="/clinic-management-software-zimbabwe"
+      path="/guides/clinic-management-software-zimbabwe"
       title="Clinic management software for Zimbabwe"
       intro="A clinic needs more than a patient register. Reception, nurses, doctors and the cashier all touch the same patient on the same day, and the software has to follow that flow. Here is what to look for, and how Axon handles it."
     >

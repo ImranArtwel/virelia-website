@@ -13,6 +13,7 @@ import { PrivacyPage } from './pages/PrivacyPage';
 import { PricingPage } from './pages/PricingPage';
 import { HospitalManagementSystemPage } from './pages/HospitalManagementSystemPage';
 import { ClinicManagementSoftwarePage } from './pages/guides/ClinicManagementSoftwarePage';
+import { GuidesIndexPage } from './pages/guides/GuidesIndexPage';
 import { EmrVsPaperPage } from './pages/guides/EmrVsPaperPage';
 import { OfflineEmrPage } from './pages/guides/OfflineEmrPage';
 
@@ -42,9 +43,10 @@ export default function App() {
       <Route path="/privacy" element={<PrivacyPage />} />
       <Route path="/pricing" element={<PricingPage />} />
       <Route path="/hospital-management-system-zimbabwe" element={<HospitalManagementSystemPage />} />
-      <Route path="/clinic-management-software-zimbabwe" element={<ClinicManagementSoftwarePage />} />
-      <Route path="/emr-vs-paper-records-zimbabwe" element={<EmrVsPaperPage />} />
-      <Route path="/offline-emr-zimbabwe" element={<OfflineEmrPage />} />
+      <Route path="/guides" element={<GuidesIndexPage />} />
+      <Route path="/guides/clinic-management-software-zimbabwe" element={<ClinicManagementSoftwarePage />} />
+      <Route path="/guides/emr-vs-paper-records-zimbabwe" element={<EmrVsPaperPage />} />
+      <Route path="/guides/offline-emr-zimbabwe" element={<OfflineEmrPage />} />
     </Routes>
   );
 }

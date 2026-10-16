@@ -3,7 +3,7 @@ import { ArticleLayout, H2, P, UL } from '../../components/ArticleLayout';
 export function EmrVsPaperPage() {
   return (
     <ArticleLayout
-      path="/emr-vs-paper-records-zimbabwe"
+      path="/guides/emr-vs-paper-records-zimbabwe"
       title="EMR vs paper records: what changes for a clinic"
       intro="Many clinics in Zimbabwe still run on files, registers and carbon copies. Paper works until it doesn't: a file goes missing, a prescription can't be read, or month-end takes three days. This guide compares the two honestly."
     >
@@ -30,7 +30,7 @@ export function EmrVsPaperPage() {
       <P>
         <strong>"Our internet and power are unreliable."</strong> This is the most common concern and it is valid for
         cloud-only systems. An offline-first EMR such as Axon saves on the device first and syncs later, so a cut does not stop the clinic.
-        See <a href="/offline-emr-zimbabwe" className="text-teal-600 hover:underline">offline EMR for Zimbabwe</a>.
+        See <a href="/guides/offline-emr-zimbabwe" className="text-teal-600 hover:underline">offline EMR for Zimbabwe</a>.
       </P>
       <P>
         <strong>"My staff won't adapt."</strong> Keep the first week simple. Start with registration and appointments,

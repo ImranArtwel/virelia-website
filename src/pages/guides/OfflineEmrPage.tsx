@@ -3,7 +3,7 @@ import { ArticleLayout, H2, P, UL } from '../../components/ArticleLayout';
 export function OfflineEmrPage() {
   return (
     <ArticleLayout
-      path="/offline-emr-zimbabwe"
+      path="/guides/offline-emr-zimbabwe"
       title="Offline EMR for clinics with power cuts and weak internet"
       intro="Load-shedding and patchy connectivity are normal for clinics in Zimbabwe. An electronic medical record that stops when the network does is worse than paper. Here is what offline-first means and what to check before you buy."
     >
